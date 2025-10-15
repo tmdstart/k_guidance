@@ -20,12 +20,12 @@ def export_to_csv():
     if not conn:
         return
     
-    query = "SELECT * FROM concert_perform"
+    query = "SELECT * FROM korea_perform"
     df = pd.read_sql(query, conn)
-    df.to_csv("concert_perform.csv", index=False, encoding="utf-8-sig")
+    df.to_csv("korea_perform.csv", index=False, encoding="utf-8-sig")
     
     conn.close()
-    print("✅ CSV 파일 생성 완료: concert_perform.csv")
+    print("✅ CSV 파일 생성 완료: korea_perform.csv")
 
 if __name__ == "__main__":
     export_to_csv()

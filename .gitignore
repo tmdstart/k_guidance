@@ -1,5 +1,5 @@
 .env
 /test/
-/.csv/
+/csv_file/
 __pycache__
 .vscode
